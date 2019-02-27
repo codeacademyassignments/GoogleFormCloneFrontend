@@ -6,7 +6,7 @@ import HomeScreen from '../HomeScreen.component';
 
 describe('HomeScreen', () => {
   it('should match old snapshot', async () => {
-    const tree = renderer.create(<HomeScreen />);
+    const tree = renderer.create(<HomeScreen navigation={{ navigate: jest.fn() }} />);
     expect(tree).toMatchSnapshot();
   });
 });
@@ -23,11 +23,11 @@ describe('getFormBlocks', () => {
     },
   ];
   it('should create array of formBlocks element', () => {
-    const wrapper = shallow(<HomeScreen />);
+    const wrapper = shallow(<HomeScreen navigation={{ navigate: jest.fn() }} />);
     expect(wrapper.instance().getFormBlocks(formBlocks).length).toEqual(2);
   });
   it('should retunr empty array if passed formBlocks array is empty', () => {
-    const wrapper = shallow(<HomeScreen />);
+    const wrapper = shallow(<HomeScreen navigation={{ navigate: jest.fn() }} />);
     expect(wrapper.instance().getFormBlocks([])).toEqual([]);
   });
 });
