@@ -24,8 +24,7 @@ export default StyleSheet.create({
     height: 5,
   },
   formBlocks: {
-    flex: 1,
-    backgroundColor: '#D6E4F1',
+    // backgroundColor: '#D6E4F1',
     alignItems: 'center',
   },
   createFormButton: {
@@ -34,14 +33,15 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     width: 70,
-    bottom: -15,
+    bottom: 0,
     right: 45,
     height: 70,
     backgroundColor: '#3F50B8',
     borderRadius: 100,
   },
-  cross: {
-
+  forms: {
+    flex: 5,
+    backgroundColor: '#D6E4F1',
   },
   crossUp: {
     backgroundColor: 'white',

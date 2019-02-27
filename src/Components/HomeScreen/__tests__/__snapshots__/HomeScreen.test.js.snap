@@ -1,84 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeScreen should match old snapshot 1`] = `
-<RCTScrollView
-  contentContainerStyle={
+<View
+  style={
     Object {
-      "height": "100%",
+      "backgroundColor": "#D6E4F1",
+      "flex": 5,
     }
   }
 >
-  <View>
-    <View
-      style={
-        Object {
-          "alignItems": "center",
-          "backgroundColor": "#D6E4F1",
-          "flex": 1,
-        }
-      }
-    >
+  <RCTScrollView>
+    <View>
       <View
         style={
           Object {
-            "alignSelf": "flex-end",
-            "margin": 10,
+            "alignItems": "center",
           }
         }
       >
         <View
-          accessible={true}
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
           style={
             Object {
-              "alignItems": "center",
-              "backgroundColor": "#3F50B8",
-              "borderColor": "rgba(0,0,0,0.2)",
-              "borderRadius": 100,
-              "borderWidth": 1,
-              "bottom": -15,
-              "height": 70,
-              "justifyContent": "center",
-              "opacity": 1,
-              "right": 45,
-              "width": 70,
+              "alignSelf": "flex-end",
+              "margin": 10,
             }
           }
         >
           <View
-            style={Object {}}
+            accessible={true}
+            isTVSelectable={true}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#3F50B8",
+                "borderColor": "rgba(0,0,0,0.2)",
+                "borderRadius": 100,
+                "borderWidth": 1,
+                "bottom": 0,
+                "height": 70,
+                "justifyContent": "center",
+                "opacity": 1,
+                "right": 45,
+                "width": 70,
+              }
+            }
           >
-            <View
-              style={
-                Object {
-                  "backgroundColor": "white",
-                  "height": 20,
-                  "width": 5,
+            <View>
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "white",
+                    "height": 20,
+                    "width": 5,
+                  }
                 }
-              }
-            />
-            <View
-              style={
-                Object {
-                  "backgroundColor": "white",
-                  "height": 5,
-                  "left": -8,
-                  "position": "absolute",
-                  "top": 8,
-                  "width": 20,
+              />
+              <View
+                style={
+                  Object {
+                    "backgroundColor": "white",
+                    "height": 5,
+                    "left": -8,
+                    "position": "absolute",
+                    "top": 8,
+                    "width": 20,
+                  }
                 }
-              }
-            />
+              />
+            </View>
           </View>
         </View>
       </View>
     </View>
-  </View>
-</RCTScrollView>
+  </RCTScrollView>
+</View>
 `;

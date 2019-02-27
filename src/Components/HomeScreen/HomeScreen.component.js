@@ -44,23 +44,24 @@ export default class HomeScreen extends Component {
       navigation.navigate('CreateForm');
     };
     return (
-      <ScrollView contentContainerStyle={{ height: '100%' }}>
-        <View style={style.formBlocks}>
-          {this.getFormBlocks(forms)}
-          <View style={{ alignSelf: 'flex-end', margin: 10 }}>
-            <TouchableOpacity
-              onPress={onPress()}
-              style={style.createFormButton}
-            >
-              <View style={style.cross}>
-                <View style={style.crossUp} />
-                <View style={style.crossFlat} />
-              </View>
-            </TouchableOpacity>
+      <View style={style.forms}>
+        <ScrollView>
+          <View style={style.formBlocks}>
+            {this.getFormBlocks(forms)}
+            <View style={{ alignSelf: 'flex-end', margin: 10 }}>
+              <TouchableOpacity
+                onPress={onPress()}
+                style={style.createFormButton}
+              >
+                <View style={style.cross}>
+                  <View style={style.crossUp} />
+                  <View style={style.crossFlat} />
+                </View>
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
-      </ScrollView>
-
+        </ScrollView>
+      </View>
     );
   }
 }
