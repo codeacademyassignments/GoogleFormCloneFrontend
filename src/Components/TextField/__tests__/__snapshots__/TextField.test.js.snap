@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField should match with old snapshot 1`] = `
+<TextInput
+  allowFontScaling={true}
+  onChangeText={[Function]}
+  style={
+    Object {
+      "backgroundColor": "red",
+    }
+  }
+  underlineColorAndroid="transparent"
+/>
+`;

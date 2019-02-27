@@ -4,17 +4,19 @@ import PropTypes from 'prop-types';
 import style from './FormBlock.style';
 
 export default class FormBlock extends Component {
-  convertUTCtoIST = utcTimeString => (new Date(utcTimeString)).toString();
+   convertUTCtoIST = utcTimeString => (new Date(utcTimeString)).toString();
 
   separateDateAndTime= (timeStamp) => {
     const separateDate = timeStamp.split('T');
     const separateTime = separateDate[1].split('.')[0];
-    const indianStandardTime = this.convertUTCtoIST(`${separateDate[0]} ${separateTime} UTC`).split(' ');
-    return `${separateDate[0]} ${indianStandardTime[4]}`;
+    // const indianStandardTime = this.convertUTCtoIST(`${separateDate[0]} ${separateTime} UTC`).split(' ');
+    // Alert.alert(`${separateDate[0]} ${separateTime} UTC`);
+    return `${separateDate[0]} ${separateTime}`;
   }
 
   render() {
     const { formBlock: { formName, createdAt } } = this.props;
+    // Alert.alert(this.separateDateAndTime(createdAt));
     return (
       <View style={style.formBlock}>
         <View style={style.innerFormBlock}>
